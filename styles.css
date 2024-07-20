@@ -1,0 +1,449 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(45deg, #EBF3F5, #C5E2F0);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Transparent background */
+    /* padding: 10px 20px; */
+    position:absolute;
+    width: 90%; /* adjust nav bar width up to right corner*/
+    top:3%;
+
+}
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 35px;
+    margin-right:7px;
+    margin-left: 10%;
+}
+.header .logo .name {
+    color: #3ba496;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-bar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-bar li {
+    margin-left: 20px;
+}
+.nav-bar li a {
+    position: relative;
+    
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    padding:15px 20px; /* Added padding to ensure the entire text is visible */
+    display:block; /* Ensures the padding is applied correctly */
+}
+
+.nav-bar li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:100%;
+    height:3px;
+    background:#e77e7e;
+    border-radius:5px;
+    transform-origin:right;   /* transition end at right side*/
+    transform:scaleX(0);
+    transition:transform .4s;
+}
+
+.nav-bar li a:hover::after{
+    transform-origin:left;      /*transition start from left*/
+    transform:scaleX(1);
+    
+}
+
+
+.signup{
+    padding: 5px 28px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #84bbd5;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.home-content {
+    background: url('Imageshck/international-day-education-cartoon-style.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    color:#675d5d;
+    /* padding-top: 60px; Adjusting for fixed header */
+}
+
+.intro{
+    position: relative;
+    top: 20%;
+    left:8%;
+}
+
+.intro h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    top:-10%;
+    color: rgb(41, 41, 41);
+    /* position: relative; */
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    top:0%;
+    position: absolute;
+    color: rgb(41, 41, 41);
+}
+
+.intro h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    top:-10%;
+    color: rgb(41, 41, 41);
+    /* position: relative; */
+}
+
+.home-content .btn-group {
+    display: flex;
+    gap: 20px;
+}
+.home-content .btn-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-image: linear-gradient(5deg, #35A7A0, #9AE0D3);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sidebar{
+    overflow: hidden;}
+.sidebar .text1 {
+    position: absolute;
+    transform: rotate(90deg);
+    padding: 35px 20px; /* Adjust the values as needed */
+    background-color: #4affff;
+    width:23%;
+    top:19%;
+    left:84%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.sidebar .text2 {
+    position: absolute;
+    transform: rotate(90deg);
+    padding: 35px 20px; /* Adjust the values as needed */
+    background-color: #89baf7;
+    width:23%;
+    top:70%;
+    left:84%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.container{
+    width:90%;
+    padding: 50px;
+    margin: 50px auto ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 2em;
+
+}
+
+/* .text{
+    position: relative;
+} */
+
+.text .logo{
+        /* position:absolute; */
+        margin-top: 5%;
+        margin-left:80%; /* Distance from the left of the viewport */
+        width: 50px; /* Set the desired width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        /* Optional: Adjust these values to fit your design */
+    
+}
+
+.topic h2{
+    font-size: 45px;
+    text-align: center;
+    color: black;
+    top: -90%;
+}
+
+.topic h3{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.bigbox{
+    width: 350px;
+    height:410px;
+    background-color:#87b1e4;
+    margin: 0px 20px;
+    transition:0.5s;
+    padding:0.5%;
+    border-radius: 15px;
+    transition: 0.5s;
+
+   }
+
+.bigbox:hover{
+        transform:scale(1.1) ;
+        background:linear-gradient(to bottom,#82cce3,#b5e1b5);
+}
+
+.sbox{
+    height:70%;
+    left: 4%;
+    width:92%;
+    top: 3%;
+    padding:0px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire sbox while maintaining aspect ratio */
+    border-radius: 15px; /* Ensure the image also respects the border-radius */
+}
+
+
+.text .text1{
+    font-size: 20px;
+    color: #534d4d;
+    font-weight: bold;
+    margin-left:5%;
+    margin-top:-50px;
+}
+
+.text .text2{
+    font-size: 13px;
+    color: #534d4d;
+    font-weight: bold;
+    margin-left:5%;
+}
+
+
+.bigbox .startnow{
+    padding: 10px 5px;
+    color: #fff;
+    background-color: #467cc0;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    width: 40%;
+    margin-left: 25%;
+}
+
+.bigbox:hover .startnow{
+    background-color:#4dadaa;
+    color: #270909;
+    font-weight: bold;
+}
+
+
+
+
+.aptitude{
+    background: url('') no-repeat center;
+    background-size: 70% 90% ;
+    height: 96vh; /* Ensures the element takes up the full viewport height */
+    margin:0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    background-position:left .2em;
+}
+.aptitude::before {
+    content: '';
+    background: url('') no-repeat;
+    background-size: cover;
+    background-position: left top; /* Moves the background image to the left corner */
+    ;/* Adjusts the transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures the background is behind the content */
+}
+.aptitude .container{
+    position: relative;
+    bottom: 10%;
+}
+
+.guardianmonitor{
+    background: url('Imageshck/file\ \(1\).png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    color: black;
+    margin-right: 10%;
+
+    /* padding-top: 60px; Adjusting for fixed header */
+}
+
+.guardianmonitor .btn-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #5ea2f5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #74a5be; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 70px; /* Padding for spacing */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out the items */
+    align-items: flex-start; /* Align items at the top */
+    /* border-top: 3px solid #e9dede; Top border for visual separation */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-left {
+    display: flex; /* Flexbox for the left section */
+    align-items: center; /* Align items vertically */
+}
+
+.footer .logo {
+    display: flex; /* Flexbox for the logo section */
+    align-items: center; /* Align items vertically */
+}
+
+.footer .logo img {
+    height: 50px; /* Logo height */
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.footer .logo .name {
+    font-size: 24px; /* Font size for the name */
+    font-weight: bold; /* Bold text */
+}
+
+.footer-right {
+    display: flex; /* Flexbox for the right section */
+    justify-content: space-between; /* Space out the sections */
+    width: 100%; /* Take full width */
+    max-width: 800px; /* Limit the max width */
+}
+
+.footer-section {
+    margin: 0 5px; /* Margin for spacing between sections */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px; /* Margin below headings */
+    font-size: 18px; /* Font size for headings */
+}
+
+.footer-section a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /* Margin below list items */
+}
+
+.footer-section p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+
+
+
+
+
+
+.last {
+    background-color: #b7d38e; /* Dark background color */
+    color: #2b2020; /* White text color */
+    padding: 10px; /* Padding for spacing */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-top: 3px solid #614330; /* Top border for visual separation */
+
+}
+
+.last .logo {
+    display: flex; /* Flexbox for the logo section */
+    align-items: center; /* Align items vertically */
+}
+
+.last .logo img {
+    height: 20px; /* Logo height */
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.last .logo .name {
+    font-size: 14px; /* Font size for the name */
+    font-weight: bold; /* Bold text */
+}
+
+
+
+
+
+
+
+
+
