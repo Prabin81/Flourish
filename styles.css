@@ -21,14 +21,15 @@ body, html {
 .header .logo {
     display: flex;
     align-items: center;
+    margin-left: 9%;
 }
 .header .logo img {
     height: 35px;
-    margin-right:7px;
-    margin-left: 10%;
+    margin-right:10px;
+    
 }
 .header .logo .name {
-    color: #3ba496;
+    color: #4e4e4e;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -49,6 +50,7 @@ body, html {
     text-decoration: none;
     font-size: 20px;
     font-weight:bold;
+    color: #4e4e4e;
     padding:15px 20px; /* Added padding to ensure the entire text is visible */
     display:block; /* Ensures the padding is applied correctly */
 }
@@ -57,14 +59,14 @@ body, html {
     content:'';
     position:absolute;
     left:0;
-    bottom:-6px;
-    width:100%;
+    bottom:.5em;
+    width:90%;
     height:3px;
-    background:#e77e7e;
+    background:#034965;
     border-radius:5px;
     transform-origin:right;   /* transition end at right side*/
     transform:scaleX(0);
-    transition:transform .4s;
+    transition: transform .4s;
 }
 
 .nav-bar li a:hover::after{
@@ -74,7 +76,7 @@ body, html {
 }
 
 
-.signup{
+/* .signup{
     padding: 5px 28px;
     font-weight: bold;
     font-size: 18px;
@@ -83,12 +85,13 @@ body, html {
     cursor: pointer;
     border-radius: 12px;
 
-}
+} */
 .home-content {
-    background: url('Imageshck/international-day-education-cartoon-style.jpg') no-repeat center center/cover;
-    height: 100vh;
+    background: url('Imageshck/Artboard\ 2.png') no-repeat center center/cover;
+    background-size: 100%;
+    height: 105vh;
     display: flex;
-    color:#675d5d;
+    color:#4e4e4e;
     /* padding-top: 60px; Adjusting for fixed header */
 }
 
@@ -99,26 +102,30 @@ body, html {
 }
 
 .intro h1 {
-    font-size: 90px;
-    margin-bottom: 20px;
-    top:-10%;
-    color: rgb(41, 41, 41);
+    font-size: 110px;
+    margin-top: .3em;
+    margin-bottom: 10px;
+    top:-20%;
+    color: #4e4e4e;
     /* position: relative; */
 }
 
 .intro h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-top: .1px;
+    margin-bottom: 10px;
     top:0%;
     position: absolute;
-    color: rgb(41, 41, 41);
+    color: #4e4e4e;
 }
 
 .intro h4 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     top:-10%;
-    color: rgb(41, 41, 41);
+    color: #4e4e4e;
+    
     /* position: relative; */
 }
 
@@ -141,31 +148,42 @@ body, html {
     position: absolute;
     transform: rotate(90deg);
     padding: 35px 20px; /* Adjust the values as needed */
-    background-color: #4affff;
+    background-image: linear-gradient(to bottom, #89C8DD, #73ADC1);
     width:23%;
     top:19%;
-    left:84%;
+    left:83.9%;
     text-align: center;
     color: #fff;
     font-size: 25px;
-    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .sidebar .text2 {
     position: absolute;
     transform: rotate(90deg);
     padding: 35px 20px; /* Adjust the values as needed */
-    background-color: #89baf7;
+    background-image: linear-gradient(to bottom, #9AE0D3, #35A7A0);
     width:23%;
-    top:70%;
-    left:84%;
+    top:70.5%;
+    left:83.9%;
     text-align: center;
     color: #fff;
     font-size: 25px;
-    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
+.discover-learning {
+    background: url('Imageshck/file\ \(2\).png') no-repeat center center/cover;
+    background-size: 80% 100% ;
+    height: 97vh; /* Ensures the element takes up the full viewport height */
+    margin:0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    background-position:left .1em;
+    
 
+}
 
 
 
@@ -198,19 +216,19 @@ body, html {
 .topic h2{
     font-size: 45px;
     text-align: center;
-    color: black;
+    color: #4e4e4e;
     top: -90%;
 }
 
 .topic h3{
     font-size: 20px;
     text-align: center;
-    color: black;
+    color: #4e4e4e;
 }
 
 .bigbox{
-    width: 350px;
-    height:410px;
+    width: 320px;
+    height: 400px;
     background-color:#87b1e4;
     margin: 0px 20px;
     transition:0.5s;
@@ -283,12 +301,13 @@ body, html {
 
 
 .aptitude{
-    background: url('') no-repeat center;
-    background-size: 70% 90% ;
+    background: url('Imageshck/file\ \(4\).png') no-repeat center;
+    background-size: 80% 100% ;
     height: 96vh; /* Ensures the element takes up the full viewport height */
     margin:0; /* Removes any default margin */
     padding: 0; /* Removes any default padding */
-    background-position:left .2em;
+    background-position:left .1em;
+
 }
 .aptitude::before {
     content: '';
@@ -310,7 +329,7 @@ body, html {
 
 .guardianmonitor{
     background: url('Imageshck/file\ \(1\).png') no-repeat center center/cover;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: end;
     color: black;
@@ -338,7 +357,7 @@ body, html {
 
 /* Footer Styling */
 .footer {
-    background-color: #74a5be; /* Dark background color */
+    background-image: linear-gradient(-170deg, #1B8FD9, #0E4C73); /* Dark background color */
     color: #fff; /* White text color */
     padding: 70px; /* Padding for spacing */
     display: flex; /* Flexbox layout */
@@ -413,37 +432,22 @@ body, html {
 
 
 
-.last {
-    background-color: #b7d38e; /* Dark background color */
-    color: #2b2020; /* White text color */
-    padding: 10px; /* Padding for spacing */
-    display: flex; /* Flexbox layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    border-top: 3px solid #614330; /* Top border for visual separation */
 
-}
 
-.last .logo {
-    display: flex; /* Flexbox for the logo section */
-    align-items: center; /* Align items vertically */
-}
-
-.last .logo img {
-    height: 20px; /* Logo height */
-    margin-right: 10px; /* Space between logo and name */
-}
-
-.last .logo .name {
-    font-size: 14px; /* Font size for the name */
-    font-weight: bold; /* Bold text */
+.name{
+    margin-right: 2px;
 }
 
 
 
 
+footer{
+    text-align: center;
+}
 
 
 
-
+.last{
+    display: block;
+}
 
